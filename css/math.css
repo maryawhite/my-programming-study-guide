@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.bluetext {
+    color: blue;
+}
+
+.invisible {
+    visibility: hidden;
+}

@@ -21,7 +21,7 @@
     <li>public: visible to all, all other classes and packages may use it</li>
     <li>private: accessible from the same class only</li>
     <li>protected: accessible from within the same package</li>
-    <li>default: AKA package-private - all members are visible within the same package, but arent' accessible from other packages</li>
+    <li>default: AKA package-private - all members are visible within the same package, but aren't accessible from other packages</li>
     <li class="small">Source: <a href="https://www.baeldung.com/java-access-modifiers">Baeldung</a></li>
   </ul>
   <h2>This vs Super</h2>
@@ -29,6 +29,14 @@
   when we have a parameter with the same name as a field (instance variable). You can't use these keywords in static areas. You might think of the word super when you think of the OOP concept of Inheritance.
   </p><p>You might also see a call to this or super that looks like: this() or super(). Use this() to call a constructor from another overloaded constructor in the same class.
   To use this(), it must be the first statement in a constructor. It's used in constructor chaining, when one constructor calls another constructor. Source-Udemy Java Masterclass by Tim B. https://www.udemy.com/share/101Wdq3@a61X7Ix5HAkKBODVXki7okVDGOJuXegoQ4iojBKTZiHx_9bWjkAVyD_S8SdvvCCPFQ==/</p>
+
+  <h2>When to use Abstract Class versus Interface</h2>
+  <p>Consider using an Abstract class when one thing "is" another: Dog is an Animal, Corvette is a Car. You may want to use an Abstract class for objects that are closely related. Consider using an interface when one thing "has a" or "is capable of" something else: a Parrot CanFly (CanFly is the interface).
+    You may want to use an interface for providing common functionality among unrelated classes.</p>
+  <p>In an interface, all methods are automatically public, all variables in the interface (if any) must be public static final (they have to be static because you can't instantiate an interface)
+    and all methods in an interface are abstract.</p>
+  <p>When you have an Abstract Class, the subclass must provide implementations for all of the abstract methods in its parent class. If it doesn't, then the subclass must also be declared abstract.</p>
+
   <p><a href="index.html">Return Home</a></p>
 <footer><p>Created by Mary White &#127808; February 2022</p></footer>
 </div>
